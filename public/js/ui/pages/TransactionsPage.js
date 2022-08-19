@@ -40,7 +40,7 @@ class TransactionsPage {
    * либо обновляйте только виджет со счетами и формы создания дохода и расхода
    * для обновления приложения
    * */
-  removeAccount() {
+  removeAccount(options) {
 
   }
 
