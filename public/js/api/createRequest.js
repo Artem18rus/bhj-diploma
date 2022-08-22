@@ -7,15 +7,19 @@
   const xhr = new XMLHttpRequest();
   xhr.responseType = 'json';
   let formData = new FormData();
+  let resultUrl;
 
   try {
     const arr = [];
       for(let key in data) {
         arr.push(`${key}=${data[key]}`);
       }
-    var resultUrl = url + '?' + (arr.join('&'));
+    resultUrl = url + '?' + (arr.join('&'));
+
+    for (let item in data) {
+      formData.append(item, data[item]);
+    }
     xhr.open(method, resultUrl);
-    
   } catch (e) {
     callback(e);
   }
@@ -23,9 +27,6 @@
   if(method === 'GET') {
     xhr.send();
   } else {
-    for (let item in data) {
-      formData.append(item, data[item]);
-    }
     xhr.send(formData);
   }
 

@@ -32,7 +32,7 @@ class AccountsWidget {
   registerEvents() {
     this.element.addEventListener('click', (event) => {
       event.preventDefault();
-      if (this.element.querySelector('.create-account') == event.target) {
+      if (event.target.closest('.pull-right')) {
         App.getModal('createAccount').open();
       }
       if (event.target.closest('.account')) {
@@ -54,7 +54,7 @@ class AccountsWidget {
   update() {
     const current = User.current();
     if(current) {
-      Account.list(User.current, (err, response) => {
+      Account.list(null, (err, response) => {
         if (response.success) {
           this.clear();
           this.renderItem(response.data);
