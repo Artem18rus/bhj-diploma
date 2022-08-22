@@ -21,12 +21,8 @@ class Sidebar {
     const app = document.querySelector('.app')
     const sidebarToggle = document.querySelector('.sidebar-toggle');
     sidebarToggle.onclick = function() {
-      if(app.classList.contains('sidebar-open') && app.classList.contains('sidebar-collapse')) {
-        app.classList.remove('sidebar-open');
-        app.classList.remove('sidebar-collapse');
-      } else {
-        app.classList.add('sidebar-open', 'sidebar-collapse');
-      }
+      app.classList.toggle('sidebar-open');
+      app.classList.toggle('sidebar-collapse');
     }
   }
 
@@ -48,16 +44,13 @@ class Sidebar {
       App.getModal('login').open();
     })
 
-    const modalClick = Array.from(document.querySelectorAll('[data-dismiss="modal"]'));
-    //console.log(modalClick)
-    
-    modalClick.forEach((item) => {
-      item.addEventListener('click', (event) => {
-        if(event.currentTarget.classList.contains('menu-item_logout')){
-          User.logout(App.setState('init'));
+    const menuItemLogout = document.querySelector('.menu-item_logout');
+    menuItemLogout.addEventListener('click', (event) => {
+      User.logout((err, response) => {
+        if(response.success) {
+          App.setState('init');
         }
-      })
+      });
     })
-
   }
 }

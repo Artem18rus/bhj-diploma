@@ -2,28 +2,31 @@
  * Основная функция для совершения запросов
  * на сервер.
  * */
-const createRequest = (options = {}) => {
+ const createRequest = (options = {}) => {
   const {url, data, method, callback} = options;
   const xhr = new XMLHttpRequest();
   xhr.responseType = 'json';
   let formData = new FormData();
-  xhr.withCredentials = true;
-  let resultUrl;
+
+  try {
+    const arr = [];
+      for(let key in data) {
+        arr.push(`${key}=${data[key]}`);
+      }
+    var resultUrl = url + '?' + (arr.join('&'));
+    xhr.open(method, resultUrl);
+    
+  } catch (e) {
+    callback(e);
+  }
 
   if(method === 'GET') {
-    formData = undefined;
-    function func(url, data) {
-      const arr = [];
-        for(let key in data) {
-          arr.push(`${key}=${data[key]}`);
-        }
-      return url + '?' + (arr.join('&'));
-    }
-    resultUrl = func(url, data);
+    xhr.send();
   } else {
     for (let item in data) {
       formData.append(item, data[item]);
     }
+    xhr.send(formData);
   }
 
   xhr.onload = function() {
@@ -32,22 +35,10 @@ const createRequest = (options = {}) => {
   xhr.onerror = function() {
     callback(xhr.statusText, null); 
   }
-
-  try {
-    if (formData !== undefined) {
-      xhr.send(formData);
-    } else {
-      xhr.open(method, resultUrl);
-      xhr.send();
-    }
-  }
-  catch (e) {
-    callback(e);
-  }
 };
 
 
-// здесь перечислены все возможные параметры для функции
+// //здесь перечислены все возможные параметры для функции
 // createRequest({
 //   url: 'http://localhost:8000', // адрес
 //   data: { // произвольные данные, могут отсутствовать

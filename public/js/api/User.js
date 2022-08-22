@@ -26,7 +26,7 @@ class User {
    * из локального хранилища
    * */
   static current() {
-      JSON.parse(localStorage.getItem('user'));
+    return JSON.parse(localStorage.getItem('user'));
   }
 
   /**
@@ -42,12 +42,10 @@ class User {
       callback( err, response ) {
         if (response && response.user) {
           User.setCurrent( response.user );
-        } else {
-          return {"success": false, "error": "Необходима авторизация"};
         }
-          if(this.success == false){
-            User.unsetCurrent(response.user);
-          }
+        if(!User.success){
+          User.unsetCurrent(response.user);
+        }
         // ...
         // вызываем параметр, переданный в метод fetch
         callback( err, response );
@@ -87,11 +85,16 @@ class User {
       url: this.URL + '/register',
       data,
       method: 'POST',
-      callback,
+      callback: (err, response) => {
+        if (response && response.user) {
+          User.setCurrent(response.user);
+        }
+        callback(err, response);
+      }
     })
 
-    if(response.success == true){
-      this.setCurrent({id: data.user.id, name: data.user.name, email: data.user.email});
+    if(data.success){
+      User.setCurrent({id: data.user.id, name: data.user.name, email: data.user.email});
     }
   }
 
