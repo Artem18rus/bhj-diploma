@@ -32,7 +32,7 @@ class AccountsWidget {
   registerEvents() {
     this.element.addEventListener('click', (event) => {
       event.preventDefault();
-      if (event.target.closest('.pull-right')) {
+      if (event.target.closest('.create-account')) {
         App.getModal('createAccount').open();
       }
       if (event.target.closest('.account')) {

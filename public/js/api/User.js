@@ -41,14 +41,14 @@ class User {
       // задаём функцию обратного вызова
       callback( err, response ) {
         if (response && response.user) {
-          User.setCurrent( response.user );
+          User.setCurrent(response.user);
         }
         if(!User.success){
           User.unsetCurrent(response.user);
         }
         // ...
         // вызываем параметр, переданный в метод fetch
-        callback( err, response );
+        callback(err, response);
       }
       // ...
     });

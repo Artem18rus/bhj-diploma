@@ -100,6 +100,11 @@
       "name": "Викторtfds",
       "user_id": "1in76u8l72tnne5",
       "id": "1in72z0l7522li9"
+    },
+    {
+      "name": "22",
+      "user_id": "1in76u8l72tnne5",
+      "id": "1in741kl76hrnga"
     }
   ],
   "transactions": [
@@ -237,6 +242,276 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
+    },
+    {
+      "id": "1in71j4l79fzs5e",
+      "type": "income",
+      "name": "Артем",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-25T19:33:01.633Z"
+    },
+    {
+      "id": "1in74asl79fzyvp",
+      "type": "expense",
+      "name": "Виктор",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-25T19:33:10.356Z"
+    },
+    {
+      "id": "1in77col79g03hk",
+      "type": "income",
+      "name": "Артем",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-25T19:33:16.327Z"
+    },
+    {
+      "id": "1in7lwl79g0j09",
+      "type": "expense",
+      "name": "Артем",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-25T19:33:36.440Z"
+    },
+    {
+      "id": "1in7640l79g1cr4",
+      "type": "income",
+      "name": "Артем",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-25T19:34:14.991Z"
+    },
+    {
+      "id": "1in76f4l79g2j79",
+      "type": "income",
+      "name": "Артем",
+      "sum": 11,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-25T19:35:10.004Z"
+    },
+    {
+      "id": "1in747ol79gcqy7",
+      "type": "income",
+      "name": "Артем",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-25T19:43:06.606Z"
+    },
+    {
+      "id": "1in739sl7eims8z",
+      "type": "income",
+      "name": "Артем",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T08:45:44.962Z"
+    },
+    {
+      "id": "1in76qwl7ejey4c",
+      "type": "income",
+      "name": "Артем",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:07:38.939Z"
+    },
+    {
+      "id": "1in73jol7ejgtee",
+      "type": "income",
+      "name": "Артем",
+      "sum": 1111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:09:06.133Z"
+    },
+    {
+      "id": "1in71l0l7ejhcnq",
+      "type": "income",
+      "name": "Артем",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:09:31.093Z"
+    },
+    {
+      "id": "1in77vsl7ejhutb",
+      "type": "income",
+      "name": "Виктор",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:09:54.622Z"
+    },
+    {
+      "id": "1in75l8l7ejjuih",
+      "type": "income",
+      "name": "Артем",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:11:27.544Z"
+    },
+    {
+      "id": "1in71tkl7ejkqh7",
+      "type": "income",
+      "name": "Виктор",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:12:08.970Z"
+    },
+    {
+      "id": "1in77mgl7ejvabl",
+      "type": "income",
+      "name": "Артем",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:20:21.248Z"
+    },
+    {
+      "id": "1in73h4l7ejw6an",
+      "type": "income",
+      "name": "Виктор",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:21:02.686Z"
+    },
+    {
+      "id": "1in74agl7ejx847",
+      "type": "income",
+      "name": "Артем",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:21:51.702Z"
+    },
+    {
+      "id": "1in770ol7ejxjmd",
+      "type": "income",
+      "name": "Артем",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:22:06.612Z"
+    },
+    {
+      "id": "1in71hgl7ejy7vi",
+      "type": "income",
+      "name": "Артем",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:22:38.045Z"
+    },
+    {
+      "id": "1in76gkl7ek2zny",
+      "type": "income",
+      "name": "Виктор",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:26:20.685Z"
+    },
+    {
+      "id": "1in761sl7ek4jev",
+      "type": "income",
+      "name": "Виктор",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:27:32.934Z"
+    },
+    {
+      "id": "1in74dsl7ek7jsa",
+      "type": "income",
+      "name": "Виктор",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:29:53.385Z"
+    },
+    {
+      "id": "1in75xkl7ek8fkx",
+      "type": "income",
+      "name": "Викторty",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:30:34.592Z"
+    },
+    {
+      "id": "1in73vkl7ekaj3k",
+      "type": "income",
+      "name": "Артем",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:32:12.463Z"
+    },
+    {
+      "id": "1in761wl7ekcw36",
+      "type": "income",
+      "name": "Виктор",
+      "sum": 122121,
+      "account_id": "1in71a4l74je5r6",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:34:02.609Z"
+    },
+    {
+      "id": "1in74i4l7el4kcq",
+      "type": "income",
+      "name": "Виктор",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T09:55:33.770Z"
+    },
+    {
+      "id": "1in71ocl7eld831",
+      "type": "income",
+      "name": "Виктор",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T10:02:17.772Z"
+    },
+    {
+      "id": "1in73lgl7elfm2k",
+      "type": "income",
+      "name": "Виктор",
+      "sum": 122121,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T10:04:09.211Z"
+    },
+    {
+      "id": "1in78a4l7elhymu",
+      "type": "income",
+      "name": "Артем",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T10:05:58.805Z"
+    },
+    {
+      "id": "1in77okl7elrhmq",
+      "type": "income",
+      "name": "Виктор",
+      "sum": 111,
+      "account_id": "1in75psl74j7z7b",
+      "user_id": "1in76u8l72tnne5",
+      "created_at": "2022-08-29T10:13:23.329Z"
     }
   ]
 }
