@@ -18,10 +18,10 @@ class CreateTransactionForm extends AsyncForm {
    * */
   renderAccountsList() {
     const accountsSelect = this.element.querySelector('.accounts-select');
-    let elemOption;
+    let elemOption = null;
     
     Account.list(User.current(), (err, data) => {
-        if (data.success) {
+        if(data.success) {
           for (let i = 0; i < data.data.length; i++) {
             let dataItem = data.data[i];
             elemOption += `
@@ -41,14 +41,11 @@ class CreateTransactionForm extends AsyncForm {
    * */
   onSubmit(data) {
     Transaction.create(data, (err, data) => {
-      if (data.success) {
+      if(data.success) {
         this.element.reset();
-        let modal = new Modal(this.element.closest('.modal'));
-        modal.close();
+        App.getModal('newIncome').close();
+        App.getModal('newExpense').close();
         App.update();
-      } else {
-          alert(response.error);
-        return;
       }
     });
   }

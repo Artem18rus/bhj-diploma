@@ -33,17 +33,16 @@ class User {
    * Получает информацию о текущем
    * авторизованном пользователе.
    * */
-  static fetch(callback) {
+   static fetch(callback) {
     createRequest({
       url: this.URL + '/current', 
       method: 'GET',
       // ...
       // задаём функцию обратного вызова
-      callback( err, response ) {
-        if (response && response.user) {
+      callback(err, response) {
+        if (response.success) {
           User.setCurrent(response.user);
-        }
-        if(!User.success){
+        } else {
           User.unsetCurrent(response.user);
         }
         // ...
@@ -67,6 +66,7 @@ class User {
       data,
       callback: (err, response) => {
         if (response && response.user) {
+          console.log(response.user)
           User.setCurrent(response.user);
         }
         callback(err, response);
@@ -92,10 +92,6 @@ class User {
         callback(err, response);
       }
     })
-
-    if(data.success){
-      User.setCurrent({id: data.user.id, name: data.user.name, email: data.user.email});
-    }
   }
 
   /**
